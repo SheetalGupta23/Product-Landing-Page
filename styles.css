@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    background: rgb(231,143,117);
+    background: linear-gradient(90deg, rgba(231,143,117,1) 0%, rgba(121,85,9,0.1896945224719101) 35%, rgba(246,255,0,0.4003686797752809) 91%);
+}
+
+
+#main-doc {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #0F2A1D;
+}
+
+#text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-topic {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+}
+
+#navbar {
+    min-height: 100vh;
+    width: 30%;
+    padding: 20px;
+}
+
+.option-list {
+    height: 90vh;
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+
+
+.options {
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.options a{
+    color: aliceblue;
+}
+
+#second-box {
+    width: 70%;
+    min-height: 100vh;
+    background-color: #E3EED4;
+    padding-bottom: 20px;
+}
+
+.info-title{
+    font-size: 38px;
+    margin: 20px;
+}
+
+.main-section h3, .main-section p, .txt{
+    margin: 15px;
+}
+
+.order-list, .list, #code-box, code{
+    margin-left: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #main-doc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        min-height: 30vh;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .option-list {
+        height: 30vh;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .option-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .option-list::-webkit-scrollbar-thumb {
+        background-color: #E3EED4;
+        border-radius: 10px;
+    }
+
+
+    .options {
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #second-box {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #E3EED4;
+    }
+
+   
+}
